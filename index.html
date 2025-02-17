@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js" defer></script>
+
+    <!-- Remixicon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- External Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/nevermind-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/schabo" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/hfmonorita" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>  <!-- ✅ Moved to Head with defer -->
+</head>
+
+<body>
+
+    <div class="logo"><a href="#">Tanishq</a></div>   
+
+    <div class="menu-toggle closed">
+        <div class="menu-toggle-icon">
+            <div class="hamburger">
+                <div class="menu-bar" data-position="top"></div>
+                <div class="menu-bar" data-position="bottom"></div>
+            </div>
+        </div>
+        <div class="menu-copy"><p>Menu</p></div>
+    </div> 
+
+    <div class="menu">
+        <div class="col col-1">
+            <div class="menu-logo"><a href="#">Tanishq</a></div>
+
+            <!-- ✅ Fixed: Links are now inside the .links div -->
+            <div class="links">
+                <div class="link"><a href="#">Projects</a></div>
+                <div class="link"><a href="#">Expertise</a></div>
+                <div class="link"><a href="#">Agency</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+
+            <div class="video-wrapper">
+                <video autoplay muted loop>
+                    <source src="./assets/d8fa28ee599051ab07588e1d077e320b09ce0cd7.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="col col-2">
+            <div class="socials">
+                <div class="sub-col">
+                    <p>Tanishq</p>
+                    <p>Bangalore</p>
+                    <p>560107</p>
+                    <p>India</p>
+                    <br/>
+                    <p>tanbusin@gmail.com</p>
+                    <p>For Design & Dev Projects</p>
+                </div>
+            </div>
+
+            <div class="header">
+                <h1>Tanishq</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
